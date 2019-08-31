@@ -1,0 +1,54 @@
+/*General*/
+li:hover .sub-menu {
+	display: block;
+}
+
+.sub-menu li:hover .sub-menu_2 {
+	display: block;
+}
+
+/*Grid*/
+.container-fluid {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+fl-c:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*Section*/
+.s_dft {
+	padding: 60px 55px;
+}
+
+@media only screen and (max-width: 480px) {
+	.s_dft {
+		padding: 60px 0;
+	}
+}
+
+/*Paddings*/
+.no_pd_b {
+	padding-bottom: 0;
+}
+
+/*Text Title Style*/
+.h_title {
+	color: #154667;
+	font-size: 1.2em;
+	font-family: 'Roboto';
+	text-transform: uppercase;
+}
+
+.h_title:after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 27px;
+	background: #154667;
+	margin-top: 7px;
+	margin-bottom: 45px;
+}

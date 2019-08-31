@@ -1,0 +1,123 @@
+.header-carousel {
+	margin-top: 180px;
+	position: relative;
+}
+
+/*Navigation Arrows*/
+.header-carousel .owl-nav {
+	color: #fff;
+	text-align: center;
+	font-size: 1em;
+	transition: 0.3s;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+	margin: 0 6px;
+	transition: 0.3s;
+}
+
+.header-carousel .owl-nav button {
+	box-shadow: 0 0 0 2px #fff;
+	border-radius: 150px;
+	width: 35px;
+	height: 35px;
+}
+
+.header-carousel .owl-nav button:hover {
+	box-shadow: 0 0 0 2px #59cbfd;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+	color: #59cbfd;
+}
+
+.header-carousel .owl-nav .owl-next:hover,
+.header-carousel .owl-nav .owl-next:focus,
+.header-carousel .owl-nav .owl-next:visited,
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-prev:focus,
+.header-carousel .owl-nav .owl-prev:visited {
+	outline: none;
+}
+
+.header-carousel .item {
+	min-height: 400px;
+	padding: 0 55px;
+}
+
+.header-carousel .item h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.15em;
+	font-family: 'Roboto';
+	font-weight: bold;
+	margin-bottom: 35px;
+	letter-spacing: 2px;
+}
+
+.header-carousel .item p.main {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	line-height: 1.15em;
+	max-width: 400px;
+	margin-bottom: 30px;
+}
+
+.header-carousel .item p.sec {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: bolder;
+	font-size: 0.875em;
+	max-width: 400px;
+}
+
+.header-carousel .item a.btn {
+	margin-top: 70px;
+	color: #fff;
+	background: #03a9f5;
+	font-family: 'Roboto';
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.header-carousel .item a.btn i {
+	margin-left: 8px;
+}
+
+.header-carousel .item a.btn:hover,
+.header-carousel .item a.btn:focus,
+.header-carousel .item a.btn:visited {
+	text-decoration: none;
+	outline: none;
+}
+
+.header-carousel .item a.btn:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #048ecd;
+	transition: 0.5s;
+	z-index: -1;
+}
+
+.header-carousel .item a.btn:hover:before {
+	width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+	.header-carousel .item a.btn {
+		margin-bottom: 50px;
+	}
+}

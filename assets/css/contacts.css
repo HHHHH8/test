@@ -1,0 +1,131 @@
+.contacts ul {
+	width: 100%;
+	min-height: 90px;
+	background: #fe5721;
+}
+
+.contacts ul li {
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	min-height: 90px;
+	padding: 26px 35px;
+}
+
+.contacts ul li:first-child {
+	position: relative;
+}
+
+.contacts ul li:first-child:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: #e24411;
+}
+
+.contacts ul li:first-child:after {
+	content: 'OR';
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: bold;
+	padding: 14px 0;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	display: block;
+	height: 44px;
+	width: 45px;
+	top: 23px;
+	right: -22px;
+	border-radius: 100px;
+	background: #e24411;
+}
+
+.contacts ul li:last-child {
+	text-align: center;	
+}
+
+.contacts ul li img {
+	height: 37px;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.contacts ul li h2 {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Roboto';
+	font-size: 14px;
+	color: #fa977c;
+}
+
+.contacts ul li h2 span {
+	color: #fff;
+	font-size: 16px;
+	margin-left: 30px;
+}
+
+@media only screen and (max-width: 1023px) {
+	.contacts ul li,
+	.contacts ul li:last-child {
+		width: 100%;
+		text-align: center;
+	}
+
+	.contacts ul li:first-child:before {
+		height: 1px;
+		width: 100%;
+		top: 100%;
+	}
+
+	.contacts ul li:first-child:after {
+		display: block;
+		margin: 0 auto;
+		top: 68px;
+		left: 0;
+		right: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.contacts ul li {
+		height: 120px;
+	}
+
+	.contacts ul li h2 span {
+		margin: 0;
+	}
+
+	.contacts ul li:first-child:after {
+		top: 98px;
+	}
+
+	.contacts ul li img {
+		display: block;
+		margin: 0 auto 5px auto;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.contacts ul li {
+		height: 140px;
+	}
+
+	.contacts ul li h2 {
+		line-height: 20px;
+	}
+
+	.contacts ul li h2 span {
+		display: block;
+	}
+
+	.contacts ul li:first-child:after {
+		top: 118px;
+	}
+}

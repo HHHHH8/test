@@ -1,0 +1,80 @@
+.news-frame {
+	background: #f1f1f1;
+}
+
+.news-carousel .owl-item.active {
+	text-align: left;
+}
+
+.news-carousel .description {
+	background: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 33px 28px;
+	max-width: 255px;
+	max-height: 190px;
+	text-align: left;
+}
+
+.news-carousel .description h3 {
+	color: #14425d;
+	font-family: 'Roboto';
+	margin-bottom: 20px;
+}
+
+.news-carousel .description p {
+	color: #6c7d81;
+	font-family: 'Roboto';
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.news-carousel .description a {
+	color: #05a5ed;
+	text-decoration: none;
+}
+
+.news-carousel .image-frame {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 265px;
+	max-height: 280px;
+	position: relative;
+}
+
+.news-carousel .image-frame div.date {
+	position: absolute;
+	display: block;
+	background: #05a5ed;
+	height: 67px;
+	width: 67px;
+}
+
+.news-carousel .image-frame img {
+	width: 100%;
+	min-height: 280px;
+}
+
+.news-carousel .owl-dots {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.news-carousel .owl-dot {
+	outline: none;
+}
+
+.news-carousel .owl-dots span {
+	width: 12px;
+	height: 12px;
+	margin: 5px 5px;
+	background: #D6D6D6;
+	display: block;
+	-webkit-backface-visibility: visible;
+	border-radius: 30px;
+}
+
+.news-carousel .owl-dot.active span {
+	background: #ffbc2d;
+}
